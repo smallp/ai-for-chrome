@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "URL HTML Fetcher",
+  "version": "1.0",
+  "description": "Opens a URL in a new tab and fetches its HTML content once loaded.",
+  "permissions": ["tabs", "scripting", "activeTab", "storage"],
+  "host_permissions": ["<all_urls>"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
